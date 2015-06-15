@@ -1,0 +1,30 @@
+events:
+    path:     /
+    defaults: { _controller: "eventroEventroBundle:Event:index" }
+
+events_show:
+    path:     /{id}/show
+    defaults: { _controller: "eventroEventroBundle:Event:show" }
+
+events_new:
+    path:     /new
+    defaults: { _controller: "eventroEventroBundle:Event:new" }
+
+events_create:
+    path:     /create
+    defaults: { _controller: "eventroEventroBundle:Event:create" }
+    requirements: { _method: post }
+
+events_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "eventroEventroBundle:Event:edit" }
+
+events_update:
+    path:     /{id}/update
+    defaults: { _controller: "eventroEventroBundle:Event:update" }
+    requirements: { _method: post|put }
+
+events_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "eventroEventroBundle:Event:delete" }
+    requirements: { _method: post|delete }

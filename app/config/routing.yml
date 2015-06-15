@@ -1,0 +1,18 @@
+eventro_user:
+    resource: "@eventroUserBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+    
+
+
+eventro_eventro:
+    resource: "@eventroEventroBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+tutoWelcomeBundle_homepage:
+    pattern:  /eventro/{name}
+    defaults: { _controller: eventroEventroBundle:Default:index }

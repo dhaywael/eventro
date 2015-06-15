@@ -1,0 +1,7 @@
+eventro_eventro_events:
+    resource: "@eventroEventroBundle/Resources/config/routing/event.yml"
+    prefix:   /events
+
+eventro_eventro_homepage:
+    path:     /hello
+    defaults: { _controller: eventroEventroBundle:Default:index }
